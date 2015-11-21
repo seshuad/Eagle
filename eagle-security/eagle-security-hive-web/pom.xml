@@ -22,32 +22,12 @@
   <parent>
     <groupId>eagle</groupId>
     <artifactId>eagle-security-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.3.0</version>
   </parent>
   <artifactId>eagle-security-hive-web</artifactId>
   <name>eagle-security-hive-web</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-      <dependency>
-          <groupId>com.sun.jersey</groupId>
-          <artifactId>jersey-server</artifactId>
-      </dependency>
-      <dependency>
-          <groupId>eagle</groupId>
-          <artifactId>eagle-service-base</artifactId>
-          <version>${project.version}</version>
-          <exclusions>
-              <exclusion>
-                  <groupId>org.slf4j</groupId>
-                  <artifactId>log4j-over-slf4j</artifactId>
-              </exclusion>
-          </exclusions>
-      </dependency>
-      <dependency>
-          <groupId>eagle</groupId>
-          <artifactId>eagle-security-common</artifactId>
-          <version>${project.version}</version>
-      </dependency>
       <dependency>
           <groupId>eagle</groupId>
           <artifactId>eagle-entity-base</artifactId>
@@ -61,12 +41,22 @@
       </dependency>
       <dependency>
           <groupId>eagle</groupId>
-          <artifactId>eagle-alert-process</artifactId>
+          <artifactId>eagle-service-base</artifactId>
           <version>${project.version}</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>log4j-over-slf4j</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+      <dependency>
+          <groupId>com.sun.jersey</groupId>
+          <artifactId>jersey-server</artifactId>
       </dependency>
       <dependency>
           <groupId>eagle</groupId>
-          <artifactId>eagle-alert-service</artifactId>
+          <artifactId>eagle-security-common</artifactId>
           <version>${project.version}</version>
       </dependency>
       <dependency>

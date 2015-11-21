@@ -67,7 +67,7 @@
 							<a href="#/dam/userProfileDetail/{{item.user}}">{{item.user}}</a>
 						</td>
 						<td>
-							{{item.KDE.topCommands.slice(0,3).join(", ")}}
+							{{item.DE.topCommands.slice(0,3).join(", ")}}
 						</td>
 						<td>
 							<a href="#/dam/userProfileDetail/{{item.user}}">Detail</a>
@@ -118,7 +118,7 @@
 									{{item.status}}
 								</td>
 								<td>
-									<a href="javascript:void(0)" ng-click="_parent.showTaskDetail(item)">Detail</a>
+									<a ng-click="_parent.showTaskDetail(item)">Detail</a>
 								</td>
 							</tr>
 						</tbody>

@@ -117,4 +117,10 @@ damControllers.controller('alertDetailCtrl', function(globalContent, Site, damCo
 			console.log($scope.alert);
 		}
 	});
+
+	// UI
+	$scope.getMessageTime = function(alert) {
+		var _time = common.getValueByPath(alert, "alertContext.properties.timestamp");
+		return Number(_time);
+	};
 });
